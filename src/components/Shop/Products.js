@@ -2,10 +2,30 @@ import ProductItem from './ProductItem';
 import classes from './Products.module.css';
 
 const DUMMY_PRODUCTS = [
-	{ title: 'Wayagu beff', quantity: 1, total: 200, price: 200 },
-	{ title: 'Foie Gras', quantity: 2, total: 52, price: 26 },
-	{ title: 'Anchois', quantity: 3, total: 15, price: 5 },
-	{ title: 'Saffron', quantity: 3, total: 156, price: 52 },
+	{
+		title: 'Wayagu beff',
+		price: 200,
+		description: 'The best beff quality',
+		id: Math.random() * 99,
+	},
+	{
+		title: 'Foie Gras',
+		price: 26,
+		description: 'The best liver quality',
+		id: Math.random() * 99,
+	},
+	{
+		title: 'Anchois',
+		price: 5,
+		description: 'The best sea condiment quality',
+		id: Math.random() * 99,
+	},
+	{
+		title: 'Saffron',
+		price: 52,
+		description: 'The best plant condiment quality',
+		id: Math.random() * 99,
+	},
 ];
 
 const Products = (props) => {
@@ -15,10 +35,11 @@ const Products = (props) => {
 			<ul>
 				{DUMMY_PRODUCTS.map((product) => (
 					<ProductItem
-						key={product.title}
+						key={product.id}
+						id={product.id}
 						title={product.title}
 						price={product.price}
-						description='This is a first product - amazing!'
+						description={product.description}
 					/>
 				))}
 			</ul>
