@@ -6,25 +6,25 @@ const DUMMY_PRODUCTS = [
 		title: 'Wayagu beff',
 		price: 200,
 		description: 'The best beff quality',
-		id: Math.random() * 99,
+		id: 'p1',
 	},
 	{
 		title: 'Foie Gras',
 		price: 26,
 		description: 'The best liver quality',
-		id: Math.random() * 99,
+		id: 'p2',
 	},
 	{
 		title: 'Anchois',
 		price: 5,
 		description: 'The best sea condiment quality',
-		id: Math.random() * 99,
+		id: 'p3',
 	},
 	{
 		title: 'Saffron',
 		price: 52,
 		description: 'The best plant condiment quality',
-		id: Math.random() * 99,
+		id: 'p4',
 	},
 ];
 
